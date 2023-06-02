@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  
+  --bg: #1f1f1f;
+
+  --aqua100: hsla(195, 91%, 25%, 1);
+  --aqua500: hsl(191deg 64% 12%);
+
+  --table-color: hsla(191, 31%, 42%, 1);
+
+  --remove: hsla(355, 91%, 66%, 1);
+
+  --text-color: hsla(240, 6%, 51%, 1)
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  background: var(--bg);
+}
+
+#app {
+  padding: 2rem;
+  max-width: 112rem;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search {
+  display: flex;
+  gap: .8rem;
+}
+
+.search input {
+  font-size: 1.6rem;
+
+  color: var(--text-color);
+  background-color: var(--aqua500);
+
+  min-width: 43rem;
+  padding: 1.6rem;
+
+  border: none;
+  border-radius: .5rem;
+}
+
+.search button {
+  font-size: 1.6rem;
+  color: white;
+  background-color: var(--aqua100);
+
+  border: none;
+  border-radius: .5rem;
+
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  padding: 1.2rem 3.2rem;
+
+  cursor: pointer;
+}
+
+header {
+  margin-top: 7rem;
+}
+
+table {
+  border-collapse: collapse;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  margin-top: 8.8rem;
+  color: white;
+  width: 112rem;
+  border: 1px solid var(--table-color);
+}
+
+thead tr th {
+  padding: 1.6rem 0 1.6rem 4rem;
+  text-align: left;
+}
+
+tbody tr td {
+  padding: 1.6rem 0 1.6rem 4rem;
+}
+
+tbody tr:nth-child(odd) {
+  background: var(--aqua500);
+  border: 1px solid var(--table-color);
+}
+
+tbody td button {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  color: var(--remove);
+
+  border: none;
+  background: none;
+
+  cursor: pointer;
+}
+
+td.user {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+
+  /*padding: 2.4rem 8.1rem 2.4rem 4rem;*/
+}
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+td.user a {
+  text-decoration: none;
+  color: #ffffff;
+}
